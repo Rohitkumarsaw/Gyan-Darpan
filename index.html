@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gyan Darpan Coaching Rasalpura</title>
+  <meta name="description" content="Download question paper and answer key from Gyan Darpan Coaching Rasalpura." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* NEXT LEVEL - Cyber Sapphire + Neon Gold Theme */
+      --bg-space: #05050a;
+      --bg-main: #0a0a12;
+      --bg-glass: rgba(10, 10, 18, 0.4);
+      --bg-card: rgba(20, 20, 35, 0.6);
+      
+      --sapphire: #0ea5e9;
+      --sapphire-dark: #0284c7;
+      --neon-gold: #facc15;
+      --neon-cyan: #22d3ee;
+      --neon-pink: #ec4899;
+      
+      --text-main: #f8fafc;
+      --text-sub: #e2e8f0;
+      --text-muted: #94a3b8;
+      
+      --glass-border: rgba(14, 165, 233, 0.2);
+      --glow-primary: 0 0 25px rgba(14, 165, 233, 0.6);
+      --glow-gold: 0 0 25px rgba(250, 204, 21, 0.6);
+      --glow-cyan: 0 0 25px rgba(34, 211, 238, 0.5);
+      
+      --radius-soft: 24px;
+      --radius-hard: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-space);
+      color: var(--text-main);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Animated Background Grid */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(rgba(14, 165, 233, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(14, 165, 233, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: gridMove 20s linear infinite;
+      z-index: -2;
+    }
+
+    @keyframes gridMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(50px, 50px); }
+    }
+
+    /* Floating Particles */
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: linear-gradient(45deg, var(--neon-cyan), var(--neon-pink));
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .particle:nth-child(1) { width: 3px; height: 3px; top: 20%; left: 10%; animation-delay: 0s; }
+    .particle:nth-child(2) { width: 5px; height: 5px; top: 60%; right: 20%; animation-delay: 2s; }
+    .particle:nth-child(3) { width: 4px; height: 4px; top: 80%; left: 80%; animation-delay: 4s; }
+    .particle:nth-child(4) { width: 2px; height: 2px; top: 40%; right: 70%; animation-delay: 1s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 0.7; }
+      50% { transform: translateY(-30px) scale(1.2); opacity: 1; }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--bg-glass);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-soft);
+      box-shadow: var(--glow-primary);
+      position: relative;
+      animation: heroGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes heroGlow {
+      0% { box-shadow: var(--glow-primary); }
+      100% { box-shadow: 0 0 40px rgba(14, 165, 233, 0.8), 0 0 60px rgba(14, 165, 233, 0.4); }
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 2rem;
+      background: linear-gradient(135deg, var(--sapphire), var(--neon-gold));
+      border-radius: var(--radius-hard);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--glow-gold);
+      animation: logoPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes logoPulse {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.05) rotate(180deg); }
+    }
+
+    .logo svg {
+      width: 45px;
+      height: 45px;
+      filter: brightness(0) invert(1);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(45deg, var(--sapphire), var(--neon-cyan));
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--glow-cyan);
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--neon-gold) 0%, var(--sapphire) 50%, var(--neon-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--neon-gold), var(--sapphire));
+      border-radius: 2px;
+      box-shadow: var(--glow-gold);
+    }
+
+    .subtext {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-sub);
+      font-size: 1.15rem;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 2.5rem;
+      margin: 4rem 0;
+    }
+
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(25px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-soft);
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.1), transparent);
+      transition: left 0.6s;
+    }
+
+    .card:hover::before {
+      left: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-20px) scale(1.02);
+      border-color: var(--sapphire);
+      box-shadow: var(--glow-primary), 0 40px 80px rgba(0,0,0,0.4);
+    }
+
+    .card-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--radius-hard);
+      background: linear-gradient(135deg, var(--sapphire), var(--neon-gold));
+      display: grid;
+      place-items: center;
+      margin-bottom: 2rem;
+      box-shadow: var(--glow-gold);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover .card-icon {
+      transform: rotateY(360deg) scale(1.1);
+      box-shadow: 0 0 40px rgba(250, 204, 21, 0.8);
+    }
+
+    .card-icon svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    .card h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--text-main), var(--sapphire));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .download-btn {
+      width: 100%;
+      padding: 1.25rem 2rem;
+      background: linear-gradient(135deg, var(--sapphire), var(--neon-cyan));
+      color: white;
+      border: none;
+      border-radius: var(--radius-hard);
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: var(--glow-primary);
+      text-decoration: none;
+    }
+
+    .download-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .download-btn:hover::before {
+      left: 100%;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(14, 165, 233, 0.6);
+      background: linear-gradient(135deg, var(--neon-cyan), var(--sapphire));
+    }
+
+    .download-btn svg {
+      width: 22px;
+      height: 22px;
+      transition: transform 0.3s ease;
+    }
+
+    .download-btn:hover svg {
+      transform: translateX(8px);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--glass-border);
+      margin-top: auto;
+    }
+
+    .footer span {
+      color: var(--neon-gold);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+      
+      .hero {
+        padding: 3rem 1.5rem;
+      }
+      
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="container">
+    <section class="hero">
+      <div class="logo" aria-label="Gyan Darpan Coaching logo">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M22 24C22 19.6 25.6 16 30 16H40C44.4 16 48 19.6 48 24V40C48 44.4 44.4 48 40 48H24C20 48 16 44 16 40V24C16 20 20 16 24 16C26 16 28 18 28 20C28 22 26 24 24 24C26 24 28 26 28 28C28 30 26 32 24 32C22 32 20 30 20 28C20 26 22 24 24 24" fill="currentColor"/>
+          <circle cx="32" cy="52" r="4" fill="currentColor" opacity="0.8"/>
+        </svg>
+      </div>
+      
+      <div class="eyebrow">Gyan Darpan Coaching • Rasalpura</div>
+      <h1>Question Papers<br><span style="font-weight: 400;">& Answer Keys</span></h1>
+      <p class="subtext">
+        🚀 Official downloads only. No modifications allowed. 
+        All rights reserved by Gyan Darpan Coaching Rasalpura.
+      </p>
+    </section>
+
+    <section class="cards-grid">
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <path d="M14 2v6h6"/>
+            <path d="M12 18v-6"/>
+            <path d="m9 15 3 3 3-3"/>
+          </svg>
+        </div>
+        <h2>📄 Question Paper</h2>
+        <p>Download official question papers instantly. Start your preparation with authentic materials from Gyan Darpan.</p>
+        <a class="download-btn" href="question.pdf" download="question-paper.pdf">
+          <span>Download Now</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3v12"/>
+            <path d="m7 10 5 5 5-5"/>
+            <path d="M5 21h14"/>
+          </svg>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 11l3 3L22 4"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+        </div>
+        <h2>✅ Answer Key</h2>
+        <p>Verify your answers with official answer keys. Track your progress and improve performance instantly.</p>
+        <a class="download-btn" href="answer.pdf" download="answer-key.pdf">
+          <span>Download Now</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3v12"/>
+            <path d="m7 10 5 5 5-5"/>
+            <path d="M5 21h14"/>
+          </svg>
+        </a>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 <span>Gyan Darpan Coaching Rasalpura</span>. All Rights Reserved.</p>
+      <p>Made with 🚀 & ❤️ from Rasalpura</p>
+    </footer>
+  </div>
+</body>
+</html>
